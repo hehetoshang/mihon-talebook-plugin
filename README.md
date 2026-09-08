@@ -6,10 +6,8 @@
 ## 兼容性
 
 - Mihon **0.20.0 或更高版本**（Keiyoushi extension API `1.6`，Android 8.0/API 26+）。
-- Talebook 必须包含 [talebook/talebook#1012](https://github.com/talebook/talebook/pull/1012)
-  的漫画 API，亦即提交 `6d027fea896c54237131a20091a65c077d989087` 或更新版本。
-- 截至 2026-09-01，Talebook 最新标签 `v26.08.11` 早于上述合并提交，不能使用本扩展；
-  请使用包含该提交的更新版本。
+- Talebook **v26.09.01 或更高版本**（包含
+  [talebook/talebook#1012](https://github.com/talebook/talebook/pull/1012) 提供的漫画 API）。
 - 当前构建固定使用 Keiyoushi `extensions-source` 提交
   `b0fc6429905a707ea59e107dd40b37f6edd570ee`。
 
