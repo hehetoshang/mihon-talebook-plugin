@@ -26,7 +26,7 @@ internal class UserInfoResponse(
 
 @Serializable
 internal class UserDto(
-    val id: Int,
+    @SerialName("is_login") val isLogin: Boolean,
 )
 
 @Serializable
