@@ -220,7 +220,7 @@ abstract class Talebook :
                 invalidateAuthentication()
                 ensureAuthenticated()
                 val info = authenticatedGet<UserInfoResponse>("$baseUrl/api/user/info".toHttpUrl())
-                if (info.user == null) throw IOException("Talebook 未返回已登录用户")
+                if (info.user?.isLogin != true) throw IOException("Talebook 未返回已登录用户，请重新登录")
                 "Talebook 连接成功"
             } catch (error: Exception) {
                 if (error is CancellationException) throw error
